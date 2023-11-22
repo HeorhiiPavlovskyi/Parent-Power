@@ -50,11 +50,13 @@ body
 
 .fsz-60
 	font-size: 60px
-	@media (max-width: 350px)
-		font-size: 30px
-	@media (mix-width: 768px)
+	@media (max-width: 575.98px)
+		font-size: 25px
+	@media (min-width: 576px)
+		font-size: 25px
+	@media (min-width: 768px)
 		font-size: 35px
-	@media (mix-width: 992px)
+	@media (min-width: 992px)
 		font-size: 50px
 
 .fpf 
@@ -428,6 +430,9 @@ footer
 	margin-top: 8px
 	transform: translateX(200%)
 	transition: $transition
+	overflow: hidden
+	@media (max-width: 767.98px)
+		transform: translateX(0%)
 	@media (min-width: 1600px)
 		transform: translateX(315%)
 	@media (min-width: 2000px)
@@ -560,6 +565,8 @@ footer
 		font-weight: normal
 		font-size: 12px
 		margin-right: 20px
+		@media (max-width: 767.98px)
+			margin-right: 5px
 		&.active
 			font-weight: bold
 			.page-link
@@ -639,7 +646,7 @@ footer
 		border: 0
 		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5)
 		position: relative
-		z-index: 2
+		z-index: 5
 		.card-header
 			background-color: #0c2143 !important
 			border: 0
@@ -650,6 +657,16 @@ footer
 				color: $white-color
 				font-style: italic
 				font-size: 50px
+				@media (max-width: 575.98px)
+					font-size: 22px
+				@media (min-width: 576px)
+				font-size: 25px
+				@media (min-width: 768px)
+					font-size: 25px
+				@media (min-width: 992px)
+					font-size: 38px
+				@media (min-width: 1140px)
+					font-size: 50px
 				&.collapsed
 					.fa-solid
 						transition: $transition
@@ -687,94 +704,114 @@ footer
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, .5)
 	position: relative
 	z-index: 15
+	background: $white-color
 
-.sign-form
-	display: flex
-	flex-direction: column
+.sign-block
 	position: relative
-	z-index: 2
-	transition: $transition
-	overflow: hidden !important
-	background-color: $white-color
-	&.active
-		transform: translateX(-100%)
-	.sign-up
-		font-family: "Playfair Display SC", serif 
-		font-weight: bold 
-		font-size: 60px
-		letter-spacing: 2px
-		text-transform: uppercase
-		line-height: 1.2
-		cursor: pointer
+	.sign-form
+		display: flex
+		flex-direction: column
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 20vh
+		z-index: 2
 		transition: $transition
-		@media (max-width: 767.98px)
-			font-size: 35px
-		&:hover
-			color: $red-color
-		&:before 
-			content: ""
-			width: 55%
-			background: #0b162c
-			position: absolute
-			top: -27%
-			bottom: -35%
-			left: -60%
-			transform: skewX(-25deg)
-		&:after 
-			content: ""
-			width: 5%
-			background: $red-color
-			position: absolute
-			top: -27%
-			bottom: -35%
-			left: -7%
-			transform: skewX(-25deg)
+		overflow: hidden !important
+		background-color: $white-color
+		@media (max-width: 575.98px)
+			height: 30vh
+		@media (min-width: 768px)
+			height: 25vh
+		@media (min-width: 992px)
+			height: 30vh
+		&.active
+			transform: translateX(-125%)
+		.sign-up
+			font-family: "Playfair Display SC", serif 
+			font-weight: bold
+			font-size: 60px 
+			height: 20vh
+			letter-spacing: 2px
+			text-transform: uppercase
+			line-height: 1.2
+			cursor: pointer
+			transition: $transition
+			@media (max-width: 575.98px)
+				height: 30vh
+			@media (max-width: 767.98px)
+				font-size: 25px
+			@media (min-width: 768px)
+				height: 25vh
+			@media (min-width: 992px)
+				height: 30vh
+			&:hover
+				color: $red-color
+			&:before 
+				content: ""
+				width: 75%
+				background: #0b162c
+				position: absolute
+				top: -27%
+				bottom: -35%
+				left: -80%
+				transform: skewX(-25deg)
+				z-index: 2
+			&:after 
+				content: ""
+				width: 5%
+				background: $red-color
+				position: absolute
+				top: -27%
+				bottom: -35%
+				left: -7%
+				transform: skewX(-25deg)
+				z-index: 2
 
-.sign-submit
-	background-color: #0e172d
-	position: absolute
-	bottom: calc(-81% - 6px)
-	height: 31%
-	width: auto
-	transition: $transition
-	z-index: 1
-	@media (max-width: 767.98px)
-		bottom: calc(-66% - 6px)
-		height: 18%
-	&.active
-		transform: translateX(0%)
-	.get 
-		color: $white-color
-		letter-spacing: 2px
-		font-weight: bold
-		font-family: "Montserrat", sans-serif
-		font-size: 10px
-	.form-control
-		background: transparent
-		border: 3px solid $white-color
-		border-top: 0
-		border-left: 0
-		border-right: 0
-		border-radius: 0
-		font-size: 18px
-		color: $white-color
-		&:focus 
-			box-shadow: 0 0 0 0.2rem transparent
-	.btn-submit
-		width: 90%
-		background: $white-color
-		color: $black-color
-		text-align: center
-		text-transform: uppercase
-		letter-spacing: 5px
-		border-radius: 0
-		font-weight: bolder
-		font-size: 25px
-		padding: 10px 0
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5)
+	.sign-submit
+		background-color: #0e172d
 		transition: $transition
-		&:hover
-			background: $red-color
+		z-index: 1
+		height: 20vh
+		@media (max-width: 575.98px)
+			height: 30vh
+		@media (min-width: 768px)
+			height: 25vh
+		@media (min-width: 992px)
+			height: 30vh
+		.get 
 			color: $white-color
-		@media (max-width: 767.98px)
+			letter-spacing: 2px
+			font-weight: bold
+			font-family: "Montserrat", sans-serif
 			font-size: 10px
+		.form-control
+			background: transparent
+			border: 3px solid $white-color
+			border-top: 0
+			border-left: 0
+			border-right: 0
+			border-radius: 0
+			font-size: 18px
+			color: $white-color
+			&:focus 
+				box-shadow: 0 0 0 0.2rem transparent
+		.btn-submit
+			width: 90%
+			background: $white-color
+			color: $black-color
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: 5px
+			border-radius: 0
+			font-weight: bolder
+			font-size: 25px
+			padding: 10px 0
+			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5)
+			transition: $transition
+			&:hover
+				background: $red-color
+				color: $white-color
+			@media (max-width: 767.98px)
+				font-size: 10px

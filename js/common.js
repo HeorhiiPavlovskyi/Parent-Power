@@ -42,11 +42,11 @@ $('#search-address').on('click', function() {
   });
 
 $('.sign-form').on('click', function() {
-  $('.sign-form, .sign-submit').addClass('active');
+  $('.sign-form').addClass('active');
   });
 
   $('.get').on('click', function() {
-  $('.sign-form, .sign-submit').removeClass('active');
+  $('.sign-form').removeClass('active');
   });
 
  })

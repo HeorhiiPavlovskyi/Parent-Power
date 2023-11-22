@@ -44,13 +44,16 @@ body {
 
 .fsz-60 {
   font-size: 60px; }
-  @media (max-width: 350px) {
+  @media (max-width: 575.98px) {
     .fsz-60 {
-      font-size: 30px; } }
-  @media (mix-width: 768px) {
+      font-size: 25px; } }
+  @media (min-width: 576px) {
+    .fsz-60 {
+      font-size: 25px; } }
+  @media (min-width: 768px) {
     .fsz-60 {
       font-size: 35px; } }
-  @media (mix-width: 992px) {
+  @media (min-width: 992px) {
     .fsz-60 {
       font-size: 50px; } }
 
@@ -448,7 +451,11 @@ footer {
 .search-img {
   margin-top: 8px;
   transform: translateX(200%);
-  transition: 0.3s; }
+  transition: 0.3s;
+  overflow: hidden; }
+  @media (max-width: 767.98px) {
+    .search-img {
+      transform: translateX(0%); } }
   @media (min-width: 1600px) {
     .search-img {
       transform: translateX(315%); } }
@@ -578,6 +585,9 @@ footer {
   font-weight: normal;
   font-size: 12px;
   margin-right: 20px; }
+  @media (max-width: 767.98px) {
+    .pagination-block .page-item {
+      margin-right: 5px; } }
   .pagination-block .page-item.active {
     font-weight: bold; }
     .pagination-block .page-item.active .page-link {
@@ -655,7 +665,7 @@ footer {
   border: 0;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   position: relative;
-  z-index: 2; }
+  z-index: 5; }
   .members .card .card-header {
     background-color: #0c2143 !important;
     border: 0;
@@ -665,7 +675,20 @@ footer {
       font-weight: bold;
       color: #fff;
       font-style: italic;
-      font-size: 50px; }
+      font-size: 50px;
+      font-size: 25px; }
+      @media (max-width: 575.98px) {
+        .members .card .card-header .btn-member {
+          font-size: 22px; } }
+      @media (min-width: 768px) {
+        .members .card .card-header .btn-member {
+          font-size: 25px; } }
+      @media (min-width: 992px) {
+        .members .card .card-header .btn-member {
+          font-size: 38px; } }
+      @media (min-width: 1140px) {
+        .members .card .card-header .btn-member {
+          font-size: 50px; } }
       .members .card .card-header .btn-member.collapsed .fa-solid {
         transition: 0.3s;
         transform: rotate(0deg); }
@@ -702,100 +725,127 @@ footer {
 .bs {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   position: relative;
-  z-index: 15; }
+  z-index: 15;
+  background: #fff; }
 
-.sign-form {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-  transition: 0.3s;
-  overflow: hidden !important;
-  background-color: #fff; }
-  .sign-form.active {
-    transform: translateX(-100%); }
-  .sign-form .sign-up {
-    font-family: "Playfair Display SC", serif;
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    cursor: pointer;
-    transition: 0.3s; }
-    @media (max-width: 767.98px) {
-      .sign-form .sign-up {
-        font-size: 35px; } }
-    .sign-form .sign-up:hover {
-      color: #ba232b; }
-    .sign-form .sign-up:before {
-      content: "";
-      width: 55%;
-      background: #0b162c;
-      position: absolute;
-      top: -27%;
-      bottom: -35%;
-      left: -60%;
-      transform: skewX(-25deg); }
-    .sign-form .sign-up:after {
-      content: "";
-      width: 5%;
-      background: #ba232b;
-      position: absolute;
-      top: -27%;
-      bottom: -35%;
-      left: -7%;
-      transform: skewX(-25deg); }
-
-.sign-submit {
-  background-color: #0e172d;
-  position: absolute;
-  bottom: calc(-81% - 6px);
-  height: 31%;
-  width: auto;
-  transition: 0.3s;
-  z-index: 1; }
-  @media (max-width: 767.98px) {
-    .sign-submit {
-      bottom: calc(-66% - 6px);
-      height: 18%; } }
-  .sign-submit.active {
-    transform: translateX(0%); }
-  .sign-submit .get {
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px; }
-  .sign-submit .form-control {
-    background: transparent;
-    border: 3px solid #fff;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    font-size: 18px;
-    color: #fff; }
-    .sign-submit .form-control:focus {
-      box-shadow: 0 0 0 0.2rem transparent; }
-  .sign-submit .btn-submit {
-    width: 90%;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border-radius: 0;
-    font-weight: bolder;
-    font-size: 25px;
-    padding: 10px 0;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: 0.3s; }
-    .sign-submit .btn-submit:hover {
-      background: #ba232b;
+.sign-block {
+  position: relative; }
+  .sign-block .sign-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    z-index: 2;
+    transition: 0.3s;
+    overflow: hidden !important;
+    background-color: #fff; }
+    @media (max-width: 575.98px) {
+      .sign-block .sign-form {
+        height: 30vh; } }
+    @media (min-width: 768px) {
+      .sign-block .sign-form {
+        height: 25vh; } }
+    @media (min-width: 992px) {
+      .sign-block .sign-form {
+        height: 30vh; } }
+    .sign-block .sign-form.active {
+      transform: translateX(-125%); }
+    .sign-block .sign-form .sign-up {
+      font-family: "Playfair Display SC", serif;
+      font-weight: bold;
+      font-size: 60px;
+      height: 20vh;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      cursor: pointer;
+      transition: 0.3s; }
+      @media (max-width: 575.98px) {
+        .sign-block .sign-form .sign-up {
+          height: 30vh; } }
+      @media (max-width: 767.98px) {
+        .sign-block .sign-form .sign-up {
+          font-size: 25px; } }
+      @media (min-width: 768px) {
+        .sign-block .sign-form .sign-up {
+          height: 25vh; } }
+      @media (min-width: 992px) {
+        .sign-block .sign-form .sign-up {
+          height: 30vh; } }
+      .sign-block .sign-form .sign-up:hover {
+        color: #ba232b; }
+      .sign-block .sign-form .sign-up:before {
+        content: "";
+        width: 75%;
+        background: #0b162c;
+        position: absolute;
+        top: -27%;
+        bottom: -35%;
+        left: -80%;
+        transform: skewX(-25deg);
+        z-index: 2; }
+      .sign-block .sign-form .sign-up:after {
+        content: "";
+        width: 5%;
+        background: #ba232b;
+        position: absolute;
+        top: -27%;
+        bottom: -35%;
+        left: -7%;
+        transform: skewX(-25deg);
+        z-index: 2; }
+  .sign-block .sign-submit {
+    background-color: #0e172d;
+    transition: 0.3s;
+    z-index: 1;
+    height: 20vh; }
+    @media (max-width: 575.98px) {
+      .sign-block .sign-submit {
+        height: 30vh; } }
+    @media (min-width: 768px) {
+      .sign-block .sign-submit {
+        height: 25vh; } }
+    @media (min-width: 992px) {
+      .sign-block .sign-submit {
+        height: 30vh; } }
+    .sign-block .sign-submit .get {
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px; }
+    .sign-block .sign-submit .form-control {
+      background: transparent;
+      border: 3px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-radius: 0;
+      font-size: 18px;
       color: #fff; }
-    @media (max-width: 767.98px) {
-      .sign-submit .btn-submit {
-        font-size: 10px; } }
+      .sign-block .sign-submit .form-control:focus {
+        box-shadow: 0 0 0 0.2rem transparent; }
+    .sign-block .sign-submit .btn-submit {
+      width: 90%;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      border-radius: 0;
+      font-weight: bolder;
+      font-size: 25px;
+      padding: 10px 0;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      transition: 0.3s; }
+      .sign-block .sign-submit .btn-submit:hover {
+        background: #ba232b;
+        color: #fff; }
+      @media (max-width: 767.98px) {
+        .sign-block .sign-submit .btn-submit {
+          font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
