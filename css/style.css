@@ -708,9 +708,10 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   transition: 0.3s;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  background-color: #fff; }
   .sign-form.active {
     transform: translateX(-100%); }
   .sign-form .sign-up {
@@ -753,16 +754,11 @@ footer {
   height: 31%;
   width: auto;
   transition: 0.3s;
-  transform: translateX(100%);
-  overflow: hidden !important;
   z-index: 1; }
   @media (max-width: 767.98px) {
     .sign-submit {
       bottom: calc(-66% - 6px);
       height: 18%; } }
-  @media (min-width: 768px) {
-    .sign-submit {
-      width: 100%; } }
   .sign-submit.active {
     transform: translateX(0%); }
   .sign-submit .get {

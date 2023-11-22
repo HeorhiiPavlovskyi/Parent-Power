@@ -692,9 +692,10 @@ footer
 	display: flex
 	flex-direction: column
 	position: relative
-	z-index: 1
+	z-index: 2
 	transition: $transition
 	overflow: hidden !important
+	background-color: $white-color
 	&.active
 		transform: translateX(-100%)
 	.sign-up
@@ -736,14 +737,10 @@ footer
 	height: 31%
 	width: auto
 	transition: $transition
-	transform: translateX(100%)
-	overflow: hidden !important
 	z-index: 1
 	@media (max-width: 767.98px)
 		bottom: calc(-66% - 6px)
 		height: 18%
-	@media (min-width: 768px)
-		width: 100%
 	&.active
 		transform: translateX(0%)
 	.get 
