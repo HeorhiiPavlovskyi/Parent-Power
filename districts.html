@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ParentPower</title>
+    <link rel="icon" type="image/x-icon" href="img/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://jvectormap.com/css/jquery-jvectormap-2.0.5.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+
+<section class="header">
+  <div class="container">
+    <div class="header-btns d-flex">
+      <button class="btn btn-hotline ml-auto mr-2">
+        parent help hotline
+      </button>
+      <button class="btn btn-donate">
+        donate
+      </button>
+    </div>
+    <nav class="navbar navbar-light p-0">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Logo.png" alt="">
+      </a>
+    </nav>
+    <div class="header-btns d-flex">
+      <a class="ml-auto" href="#!">
+        <button class="btn btn-afpi">
+          back to afpi <span><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="border-body">
+  <section>
+    <div class="districts">
+      <div class="overlay">
+        <div class="container d-flex">
+          <div class="text-center m-auto">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="fpf fsz-60">
+                  districts
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="border-body">
+  <section class="search-filter pb-3">
+    <div class="container">
+      <div class="search-block">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="search-district-input py-2">
+              <span><img style="width: 10%;" src="img/search.png" alt=""></span>
+              <input type="text" placeholder="Search by District or Address">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="filter-blocks">
+            filter by
+          </div>
+          <div class="dropdown ml-3">
+            <button class="btn state-btn dropdown-toggle" type="button" id="state-btn" data-toggle="dropdown">
+              state
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><span></span> Alabama</a>
+              <a class="dropdown-item" href="#"><span></span> Alaska</a>
+              <a class="dropdown-item" href="#"><span></span> American Samoa</a>
+              <a class="dropdown-item" href="#"><span></span> Arizona</a>
+              <a class="dropdown-item" href="#"><span></span> Arkansas</a>
+              <a class="dropdown-item" href="#"><span></span> California</a>
+              <a class="dropdown-item" href="#"><span></span> Colorado</a>
+              <a class="dropdown-item" href="#"><span></span> Connecticut</a>
+              <a class="dropdown-item" href="#"><span></span> Delaware</a>
+              <a class="dropdown-item" href="#"><span></span> District of Columbia</a>
+              <a class="dropdown-item" href="#"><span></span> Florida</a>
+              <a class="dropdown-item" href="#"><span></span> Georgia</a>
+              <a class="dropdown-item" href="#"><span></span> Hawaii</a>
+              <a class="dropdown-item" href="#"><span></span> Idaho</a>
+              <a class="dropdown-item" href="#"><span></span> Illinois</a>
+              <a class="dropdown-item" href="#"><span></span> Indiana</a>
+              <a class="dropdown-item" href="#"><span></span> Iowa</a>
+              <a class="dropdown-item" href="#"><span></span> Kansas</a>
+              <a class="dropdown-item" href="#"><span></span> Kentucky</a>
+              <a class="dropdown-item" href="#"><span></span> Louisiana</a>
+              <a class="dropdown-item" href="#"><span></span> Maine</a>
+              <a class="dropdown-item" href="#"><span></span> Maryland</a>
+              <a class="dropdown-item" href="#"><span></span> Massachusetts</a>
+              <a class="dropdown-item" href="#"><span></span> Michigan</a>
+              <a class="dropdown-item" href="#"><span></span> Minnesota</a>
+              <a class="dropdown-item" href="#"><span></span> Mississippi</a>
+              <a class="dropdown-item" href="#"><span></span> Missouri</a>
+              <a class="dropdown-item" href="#"><span></span> Montana</a>
+              <a class="dropdown-item" href="#"><span></span> Nebraska</a>
+              <a class="dropdown-item" href="#"><span></span> Nevada</a>
+              <a class="dropdown-item" href="#"><span></span> New Hampshire</a>
+              <a class="dropdown-item" href="#"><span></span> New Jersey</a>
+              <a class="dropdown-item" href="#"><span></span> New Mexico</a>
+              <a class="dropdown-item" href="#"><span></span> New York</a>
+              <a class="dropdown-item" href="#"><span></span> North Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> North Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Ohio</a>
+              <a class="dropdown-item" href="#"><span></span> Oklahoma</a>
+              <a class="dropdown-item" href="#"><span></span> Oregon</a>
+              <a class="dropdown-item" href="#"><span></span> Pennsylvania</a>
+              <a class="dropdown-item" href="#"><span></span> Rhode Island</a>
+              <a class="dropdown-item" href="#"><span></span> South Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> South Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Tennessee</a>
+              <a class="dropdown-item" href="#"><span></span> Texas</a>
+              <a class="dropdown-item" href="#"><span></span> Utah</a>
+              <a class="dropdown-item" href="#"><span></span> Vermont</a>
+              <a class="dropdown-item" href="#"><span></span> Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Washington</a>
+              <a class="dropdown-item" href="#"><span></span> West Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Wisconsin</a>
+              <a class="dropdown-item" href="#"><span></span> Wyoming</a>
+            </div>
+          </div>
+          <div class="dropdown ml-3">
+            <button class="btn state-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+              county
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><span></span> Alabama</a>
+              <a class="dropdown-item" href="#"><span></span> Alaska</a>
+              <a class="dropdown-item" href="#"><span></span> American Samoa</a>
+              <a class="dropdown-item" href="#"><span></span> Arizona</a>
+              <a class="dropdown-item" href="#"><span></span> Arkansas</a>
+              <a class="dropdown-item" href="#"><span></span> California</a>
+              <a class="dropdown-item" href="#"><span></span> Colorado</a>
+              <a class="dropdown-item" href="#"><span></span> Connecticut</a>
+              <a class="dropdown-item" href="#"><span></span> Delaware</a>
+              <a class="dropdown-item" href="#"><span></span> District of Columbia</a>
+              <a class="dropdown-item" href="#"><span></span> Florida</a>
+              <a class="dropdown-item" href="#"><span></span> Georgia</a>
+              <a class="dropdown-item" href="#"><span></span> Hawaii</a>
+              <a class="dropdown-item" href="#"><span></span> Idaho</a>
+              <a class="dropdown-item" href="#"><span></span> Illinois</a>
+              <a class="dropdown-item" href="#"><span></span> Indiana</a>
+              <a class="dropdown-item" href="#"><span></span> Iowa</a>
+              <a class="dropdown-item" href="#"><span></span> Kansas</a>
+              <a class="dropdown-item" href="#"><span></span> Kentucky</a>
+              <a class="dropdown-item" href="#"><span></span> Louisiana</a>
+              <a class="dropdown-item" href="#"><span></span> Maine</a>
+              <a class="dropdown-item" href="#"><span></span> Maryland</a>
+              <a class="dropdown-item" href="#"><span></span> Massachusetts</a>
+              <a class="dropdown-item" href="#"><span></span> Michigan</a>
+              <a class="dropdown-item" href="#"><span></span> Minnesota</a>
+              <a class="dropdown-item" href="#"><span></span> Mississippi</a>
+              <a class="dropdown-item" href="#"><span></span> Missouri</a>
+              <a class="dropdown-item" href="#"><span></span> Montana</a>
+              <a class="dropdown-item" href="#"><span></span> Nebraska</a>
+              <a class="dropdown-item" href="#"><span></span> Nevada</a>
+              <a class="dropdown-item" href="#"><span></span> New Hampshire</a>
+              <a class="dropdown-item" href="#"><span></span> New Jersey</a>
+              <a class="dropdown-item" href="#"><span></span> New Mexico</a>
+              <a class="dropdown-item" href="#"><span></span> New York</a>
+              <a class="dropdown-item" href="#"><span></span> North Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> North Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Ohio</a>
+              <a class="dropdown-item" href="#"><span></span> Oklahoma</a>
+              <a class="dropdown-item" href="#"><span></span> Oregon</a>
+              <a class="dropdown-item" href="#"><span></span> Pennsylvania</a>
+              <a class="dropdown-item" href="#"><span></span> Rhode Island</a>
+              <a class="dropdown-item" href="#"><span></span> South Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> South Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Tennessee</a>
+              <a class="dropdown-item" href="#"><span></span> Texas</a>
+              <a class="dropdown-item" href="#"><span></span> Utah</a>
+              <a class="dropdown-item" href="#"><span></span> Vermont</a>
+              <a class="dropdown-item" href="#"><span></span> Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Washington</a>
+              <a class="dropdown-item" href="#"><span></span> West Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Wisconsin</a>
+              <a class="dropdown-item" href="#"><span></span> Wyoming</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row py-3">
+          <div class="filter-blocks">
+            search by
+          </div>
+          <div class="dropdown ml-3">
+            <button class="btn state-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+              name
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><span></span> Alabama</a>
+              <a class="dropdown-item" href="#"><span></span> Alaska</a>
+              <a class="dropdown-item" href="#"><span></span> American Samoa</a>
+              <a class="dropdown-item" href="#"><span></span> Arizona</a>
+              <a class="dropdown-item" href="#"><span></span> Arkansas</a>
+              <a class="dropdown-item" href="#"><span></span> California</a>
+              <a class="dropdown-item" href="#"><span></span> Colorado</a>
+              <a class="dropdown-item" href="#"><span></span> Connecticut</a>
+              <a class="dropdown-item" href="#"><span></span> Delaware</a>
+              <a class="dropdown-item" href="#"><span></span> District of Columbia</a>
+              <a class="dropdown-item" href="#"><span></span> Florida</a>
+              <a class="dropdown-item" href="#"><span></span> Georgia</a>
+              <a class="dropdown-item" href="#"><span></span> Hawaii</a>
+              <a class="dropdown-item" href="#"><span></span> Idaho</a>
+              <a class="dropdown-item" href="#"><span></span> Illinois</a>
+              <a class="dropdown-item" href="#"><span></span> Indiana</a>
+              <a class="dropdown-item" href="#"><span></span> Iowa</a>
+              <a class="dropdown-item" href="#"><span></span> Kansas</a>
+              <a class="dropdown-item" href="#"><span></span> Kentucky</a>
+              <a class="dropdown-item" href="#"><span></span> Louisiana</a>
+              <a class="dropdown-item" href="#"><span></span> Maine</a>
+              <a class="dropdown-item" href="#"><span></span> Maryland</a>
+              <a class="dropdown-item" href="#"><span></span> Massachusetts</a>
+              <a class="dropdown-item" href="#"><span></span> Michigan</a>
+              <a class="dropdown-item" href="#"><span></span> Minnesota</a>
+              <a class="dropdown-item" href="#"><span></span> Mississippi</a>
+              <a class="dropdown-item" href="#"><span></span> Missouri</a>
+              <a class="dropdown-item" href="#"><span></span> Montana</a>
+              <a class="dropdown-item" href="#"><span></span> Nebraska</a>
+              <a class="dropdown-item" href="#"><span></span> Nevada</a>
+              <a class="dropdown-item" href="#"><span></span> New Hampshire</a>
+              <a class="dropdown-item" href="#"><span></span> New Jersey</a>
+              <a class="dropdown-item" href="#"><span></span> New Mexico</a>
+              <a class="dropdown-item" href="#"><span></span> New York</a>
+              <a class="dropdown-item" href="#"><span></span> North Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> North Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Ohio</a>
+              <a class="dropdown-item" href="#"><span></span> Oklahoma</a>
+              <a class="dropdown-item" href="#"><span></span> Oregon</a>
+              <a class="dropdown-item" href="#"><span></span> Pennsylvania</a>
+              <a class="dropdown-item" href="#"><span></span> Rhode Island</a>
+              <a class="dropdown-item" href="#"><span></span> South Carolina</a>
+              <a class="dropdown-item" href="#"><span></span> South Dakota</a>
+              <a class="dropdown-item" href="#"><span></span> Tennessee</a>
+              <a class="dropdown-item" href="#"><span></span> Texas</a>
+              <a class="dropdown-item" href="#"><span></span> Utah</a>
+              <a class="dropdown-item" href="#"><span></span> Vermont</a>
+              <a class="dropdown-item" href="#"><span></span> Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Washington</a>
+              <a class="dropdown-item" href="#"><span></span> West Virginia</a>
+              <a class="dropdown-item" href="#"><span></span> Wisconsin</a>
+              <a class="dropdown-item" href="#"><span></span> Wyoming</a>
+            </div>
+          </div>
+          <div class="ml-3">
+            <button class="btn state-btn" type="button" id="search-address">
+              address
+            </button>
+          </div>
+          <div class="search-img">
+            <div class="d-flex">
+              <img src="img/search.png" alt="">
+              <input type="text" class="search-address" placeholder="Search by Address">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-block pb-5">
+        <a href="school.html">
+          <div class="school-card">
+            <div class="school-state">
+              alaska | autauga
+            </div>
+            <div class="school-name">
+              Autauga County School District
+            </div>
+            <div class="school-contacts">
+              153 W 4th St. Prattville. AL 36067
+              <br>
+              (334)365-5706
+            </div>
+          </div>
+        </a>
+        <div class="school-card">
+          <div class="school-state">
+            alaska | autauga
+          </div>
+          <div class="school-name">
+            Chilton County School District
+          </div>
+          <div class="school-contacts">
+            1705 Lay Dam Rd. Clanton, AL 35045
+            <br>
+            (205)280-3000
+          </div>
+        </div>
+        <div class="school-card">
+          <div class="school-state">
+            alaska | autauga
+          </div>
+          <div class="school-name">
+            Dallas County School District
+          </div>
+          <div class="school-contacts">
+            PO Box 1056, Selma, AL 36702
+            <br>
+            (334)875-3440
+          </div>
+        </div>
+        <div class="school-card">
+          <div class="school-state">
+            alaska | autauga
+          </div>
+          <div class="school-name">
+            Elmore County School District
+          </div>
+          <div class="school-contacts">
+            100 H H Robison Dr, Wetumpka. AL 36092
+            <br>
+            (334)567-1200
+          </div>
+        </div>
+      </div>
+      <div class="pagination-block">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+             <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#!">
+                    <span><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#!">
+                    <span><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hotline-form py-5">
+    <div class="container pb-3">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="text-center fsz-60 fpf py-3" style="letter-spacing: 7px;">
+            parent help hotline
+          </div>
+          <div class="fsz-18 fpf text-center font-weight-bold pb-5" style="letter-spacing: 1px;">
+            Share your story of fighting for your child's education or reach out to ask for assistance and resources in your district.
+          </div>
+        </div>
+      </div>
+      <div>
+        <form>
+          <div class="form-row">
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="Phone">
+            </div>
+          </div>
+          <div class="form-row py-4">
+            <div class="col-8">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="Zip">
+            </div>
+          </div>
+          <div class="form-row pb-3">
+            <div class="col">
+              <textarea class="form-control" rows="3" placeholder="Share your Story"></textarea>
+            </div>
+          </div>
+          <div class="form-row justify-content-center py-5">
+            <div class="col-3">
+              <button type="submit" class="btn btn-submit">submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="pt-5 pb-2">
+        <div class="row">
+          <div class="col-8">
+            <p class="fsz-14 text-white" style="letter-spacing: 5px;">
+              america first policy institute
+            </p>
+            <p class="afpi">
+              America First Policy Institute is a 501(c)(3) non-profis organization, Tax ID # 85-4202763. Donations to AFPI may be used to support work of class counsel to identity the class and develop winning factual and legal arguments, and raise awareness about the case to advance these goals. Donations may also be used so support research and develepment of public interast pericy and will support all of AFpis charitable purpases, signing up as a supporter or donor does not make you a party to, or class member in, any lawsuit in which AFPi may or may not be engaged. Contributions may also be postmarked to America First Policy institute, P.O. Box 2646, Arlington, VA 22202-0646
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="seal">
+              <img src="img/afpi-seal.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/enllax@1.1.0/dist/jquery.enllax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+  <script src="https://jvectormap.com/js/jquery-jvectormap-2.0.5.min.js"></script>
+  <script src="https://jvectormap.com/js/jquery-jvectormap-us-lcc.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

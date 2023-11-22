@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:ital,wght@0,4001,4001,700&display=swap')
+
+$transition: 0.3s
+$white-color: #fff
+$black-color: #000
+$blue-color: #a2cbf9
+$red-color: #ba232b
+$midnight-blue-color: #1e3559
+
+*
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: "Montserrat", sans-serif
+	text-transform: uppercase
+	font-weight: bold
+	overflow-x: hidden !important
+	&::-webkit-scrollbar
+		width: 10px
+		height: 10px
+	&::-webkit-scrollbar-track
+		background-color: #0b162c
+		border-radius: 0px
+	&::-webkit-scrollbar-thumb
+		background-color: #d6d5d5
+		border-radius: 15px
+
+.fsz-12
+	font-size: 12px
+
+.fsz-14
+	font-size: 14px
+
+.fsz-18
+	font-size: 18px
+
+.fsz-25
+	font-size: 25px
+
+.fsz-37
+	font-size: 37px
+	@media (min-width: 767.98px)
+		font-size: 25px
+	@media (max-width: 991.98px)
+		font-size: 32px
+
+.fsz-60
+	font-size: 60px
+	@media (max-width: 350px)
+		font-size: 30px
+	@media (mix-width: 768px)
+		font-size: 35px
+	@media (mix-width: 992px)
+		font-size: 50px
+
+.fpf 
+	font-family: "Playfair Display SC", serif
+
+.container 
+	@media (min-width: 1140px)
+		max-width: 950px
+	@media (min-width: 1600px)
+		max-width: 1200px
+	@media (min-width: 2000px)
+		max-width: 1600px 
+
+.border-body
+	border: 17px solid 
+	color: #0b162c
+	border-top: 0
+
+.pt-100
+	padding-top: 100px
+	@media (max-width: 767.98px)
+		padding-top: 50px
+
+.header
+	height: calc(131px - 0.5rem)
+	background: #0b162c
+	@media (max-width: 767.98px)
+		height: calc(111px - 0.5rem)
+	.header-btns
+		font-family: "Montserrat", sans-serif
+		.btn-hotline, .btn-donate, .btn-afpi
+			color: $white-color 
+			font-size: 12px
+			border-radius: 0
+			letter-spacing: 2px
+			text-transform: uppercase
+			font-weight: bold
+		.btn-hotline
+			background: $blue-color
+			padding: 10px 20px
+			transition: $transition
+			&:hover
+				background: #0b162c
+				border: 1px solid $white-color
+			@media (max-width: 767.98px)
+				display: none
+		.btn-donate
+			background: $red-color
+			padding: 10px 20px
+			transition: $transition
+			&:hover
+				background: #0b162c
+				border: 1px solid $white-color
+			@media (max-width: 767.98px)
+				display: none
+		.btn-afpi
+			font-size: 12px !important
+			padding: 0
+			transition: $transition
+			&:hover
+				color: $red-color
+
+	.navbar
+		display: flex
+		.navbar-brand
+			img 
+				max-height: 35px
+				@media (max-width: 767.98px)
+					max-height: 25px
+			@media (max-width: 767.98px)
+				padding-top: 20px
+				padding-bottom: 20px
+
+.welcome
+	background-image: url(../img/gettyimages-1139435499-612x612.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.overlay
+		min-height: 75vh
+		background: rgba(255, 255, 255, .7)
+		background-image: url(../img/afpi-ribbon.png)
+		background-repeat: no-repeat
+		background-position: bottom -50px right
+		display: flex 
+		color: #0b162c
+		letter-spacing: 1.6px
+		@media (max-width: 767.98px)
+			background-size: 50%
+			min-height: calc(100vh - 111px - 0.5rem)
+
+.db-block
+	background: #0b162c
+	color: $white-color
+	padding: 10px 20px
+	text-transform: uppercase
+	letter-spacing: 5px
+	font-weight: bold
+
+
+.input-group-text
+	background: transparent
+	padding: 0
+	border-radius: 0
+	border-width: 5px
+	border-color: #0b162c
+	border-top: 0
+	border-left: 0
+	border-right: 0
+
+.search-input	
+	border-radius: 0
+	border-width: 5px
+	border-color: #0b162c !important
+	border-top: 0
+	border-left: 0
+	border-right: 0
+	font-size: 25px
+
+.input-group
+	input::placeholder
+		font-style: italic
+		letter-spacing: 2px
+
+.search-box
+	display: flex
+	position: relative
+	@media (max-width: 350px)
+		left: -33px
+	.search
+		position: absolute
+		text-align: center
+		margin: auto
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 400px
+		height: 46px
+		background: #0b162c
+		transition: all .5s
+		z-index: 4
+		cursor: pointer
+		color: #FFF
+		font-weight: bold 
+		padding: 8px 20px
+		font-size: 25px
+		letter-spacing: 4px
+		text-transform: uppercase
+		line-height: 1.2
+		@media (max-width: 991.98px)
+			font-size: 18px
+			height: 36px
+			width: 320px
+		@media (max-width: 575.98px)
+			width: 260px
+			font-size: 12px
+			line-height: 1.5
+	.form-drop
+		position: absolute
+		margin: auto
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 400px
+		height: 46px
+		transition: all .5s
+		opacity: 0
+		z-index: 5
+		@media (max-width: 991.98px)
+			height: 36px
+			width: 320px
+		@media (max-width: 575.98px)
+			width: 260px
+		.btn-search
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			padding: 0
+			width: 28px
+			height: 28px
+			cursor: pointer
+			background-image: url(../img/search.png)
+			background-size: cover 
+			background-position: center center
+			background-repeat: no-repeat
+			@media (max-width: 991.98px)
+				width: 20px
+				height: 20px
+		.form-control
+			border: 0
+			border-bottom: 2px solid #0b162c
+			background: transparent
+			border-radius: 0
+			font-size: 20px
+			font-style: italic
+			padding: 0 10px 0 46px
+			cursor: pointer
+			@media (max-width: 991.98px)
+				font-size: 16px
+				padding: 0 10px 0 30px
+			@media (max-width: 575.98px)
+				font-size: 14px	
+			&::-webkit-input-placeholder
+				color: #a5a6ab
+				font-family: 'Montserrat', sans-serif
+				font-style: italic
+				letter-spacing: 2px
+			&::-moz-placeholder
+				color: #a5a6ab
+				font-family: 'Montserrat', sans-serif
+				font-style: italic
+				letter-spacing: 2px
+			&:-ms-input-placeholder
+				color: #a5a6ab
+				font-family: 'Montserrat', sans-serif
+				font-style: italic
+				letter-spacing: 2px
+			&:focus 
+				box-shadow: none
+		&.active
+			opacity: 1
+			right: -415px
+			@media (max-width: 991.98px)
+				right: 0
+				bottom: -80px
+			.form-control
+				cursor: text
+			~ .search
+				left: -415px
+				z-index: 6
+				@media (max-width: 991.98px)
+					left: 0
+
+.map-wrap
+	position: relative
+	&:before 
+		content: ""
+		display: block 
+		padding-top: 70%
+	.map 
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		@media (max-width: 767.98px)
+			right: -25px
+			bottom: -25px
+		.jvectormap-zoomin
+			top: 66%
+			color: #fff
+			background-color: #a2cbf9
+		.jvectormap-zoomout
+			top: 74%
+			color: #a2cbf9
+			background-color: #fff
+			@media (max-width: 767.98px)
+				top: 80%
+			@media (min-width: 768px)
+				top: 77%
+			@media (min-width: 992px)
+				top: 74%
+			@media (min-width: 1600px)
+				top: 73%
+			@media (min-width: 2000px)
+				top: 71%
+		.jvectormap-zoomin, .jvectormap-zoomout
+			width: 47px
+			height: 41px
+			transition: $transition
+			&:hover
+				background-color: #0e2241
+				border-color: #0e2241
+			@media (max-width: 767.98px)
+				width: 21px
+				height: 18px
+		.jvectormap-zoomin, .jvectormap-zoomout, .jvectormap-goback 
+			position: absolute
+			left: 90%
+			border-radius: 0
+			padding: 3px
+			cursor: pointer
+			line-height: 43px
+			text-align: center
+			box-sizing: content-box
+			font-size: 35px
+			border: 5px solid #a2cbf9
+			@media (max-width: 767.98px)
+				left: 85%
+				line-height: 18px
+
+.hotline-form
+	background: $midnight-blue-color
+	color: $white-color
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5)
+	textarea 
+		resize: none
+	.form-control
+		background: transparent
+		border: 3px solid $white-color
+		border-top: 0
+		border-left: 0
+		border-right: 0
+		border-radius: 0
+		font-size: 18px
+		color: $white-color
+		&:focus 
+			box-shadow: 0 0 0 0.2rem transparent
+		@media (max-width: 767.98px)
+			margin-top: 16px
+		@media (max-width: 575.98px)
+			font-size: 10px
+	.btn-submit
+		width: 100%
+		background: $white-color
+		color: $black-color
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 5px
+		border-radius: 0
+		font-weight: bolder
+		font-size: 25px
+		padding: 15px 0
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5)
+		transition: $transition
+		&:hover
+			background: $red-color
+			color: $white-color
+
+footer 
+	background-image: url(../img/footer-bkgd.jpg)
+	background-size: cover
+	position: relative
+	z-index: 15
+	background-color: #0b162c
+	.seal 
+		position: absolute
+		bottom: 8px
+		width: 30%
+		right: 0
+		@media (max-width: 767.98px)
+			width: 100%
+			bottom: 80px
+			right: 5px
+	.afpi 
+		color: #7d8390
+		font-size: 6px
+		letter-spacing: 2px
+		line-height: 2
+
+
+
+.districts
+	background-image: url(../img/gettyimages-1139435499-612x612.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	.overlay
+		min-height: 25vh
+		background: rgba(255, 255, 255, .7)
+		background-repeat: no-repeat
+		background-position: bottom -50px right
+		display: flex 
+		color: #0b162c
+		letter-spacing: 1.6px
+
+.search-img	
+	margin-top: 8px
+	transform: translateX(200%)
+	transition: $transition
+	@media (min-width: 1600px)
+		transform: translateX(315%)
+	@media (min-width: 2000px)
+		transform: translateX(500%)
+	img 
+		width: 20px
+		height: 20px
+	&.active
+		margin-left: 20px
+		transform: translateX(0%)
+
+.filter-blocks
+	padding: 10px 20px
+	background: #0b162c
+	color: $white-color
+	letter-spacing: 5px
+	display: inline-block
+
+.search-filter
+	.dropdown
+		.dropdown-toggle
+			&:after 
+				display: none
+		.dropdown-menu
+			margin: 0
+			border-radius: 0
+			&.show
+				max-height: 240px
+				min-width: 180px
+				overflow-y: auto
+				overflow-x: hidden
+				background: $midnight-blue-color
+				color: $white-color
+				&::-webkit-scrollbar
+					width: 15px
+					height: 15px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 4px
+				&::-webkit-scrollbar-thumb
+					background-color: #d6d5d5
+					border-radius: 15px
+			.dropdown-item
+				color: $white-color
+				transition: $transition
+				padding: 4px 8px
+				font-size: 12px
+				letter-spacing: 2px
+				align-items: center
+				&:hover
+					background: transparent
+					span 
+						background: $white-color
+				span 
+					display: inline-block
+					width: 10px
+					height: 10px
+					border: 1px solid $white-color
+					border-radius: 100px
+					background: transparent
+					transition: $transition
+					margin-right: 5px
+
+.search-district-input
+	opacity: 0
+	transition: $transition
+	position: relative
+	input
+		border: 0 !important
+	input::placeholder
+		letter-spacing: 1px
+		font-size: 12px
+	&.show 
+		opacity: 1
+
+.search-block
+	border-bottom: 2px solid #0b162c
+	padding: 0 16px
+
+.state-btn
+	padding: 10px 20px
+	color: #0b162c
+	border-radius: 0
+	border: 0
+	letter-spacing: 2px
+	text-transform: uppercase
+	transition: $transition
+	&:hover, &:focus
+		background: $midnight-blue-color
+		color: $white-color
+		font-weight: bold
+		box-shadow: 0px 5px 10px $midnight-blue-color
+
+.card-block
+	a 
+		text-decoration: none
+		color: #0b162c
+	.school-card
+		padding: 40px 70px
+		border-bottom: 2px solid #0b162c
+		text-decoration: none !important
+		transition: $transition
+		background: $white-color
+		&:hover
+			transform: scale(1.1)
+			box-shadow: 0px 10px 10px rgba(0, 0, 0, .7)
+			border-bottom: 0
+			cursor: pointer
+		.school-state
+			font-size: 12px
+			display: inline-block
+			text-transform: uppercase
+			margin-bottom: 16px
+			border-bottom: 1px solid $red-color
+		.school-name
+			font-family: "Playfair Display", serif
+			font-style: italic
+			font-weight: bold
+			font-size: 30px
+			text-transform: none !important
+		.school-contacts
+			font-weight: bold
+			font-size: 14px
+			text-transform: none
+			font-style: italic
+			letter-spacing: 2px
+
+.pagination-block
+	.page-item
+		font-weight: normal
+		font-size: 12px
+		margin-right: 20px
+		&.active
+			font-weight: bold
+			.page-link
+				background-color: transparent
+				border: 0
+		.page-link
+			color: #0b162c
+			border: 0
+			transition: $transition
+			&:hover
+				background: #0b162c
+				color: $white-color
+			&:focus
+				box-shadow: 0 0 0 0.2rem transparent
+
+.search-address
+	width: 1%
+	transform: translateX(80%)
+	opacity: 0
+	pointer-events: none
+	transition: $transition
+	&.active
+		transform: translateX(5%)
+		opacity: 1
+		width: 100% 
+		border: 0
+		pointer-events: auto
+
+.open 
+	min-height: calc(100vh - 140px)
+	overflow: hidden
+
+.bg-ribbon
+	background-image: url(../img/afpi-ribbon.png)
+	background-size: auto
+	background-repeat: no-repeat
+	background-position: bottom -100px right
+
+.school-box, .members
+	a 
+		text-decoration: none !important
+		color: #0b162c
+		transition: $transition
+		&:hover 
+			opacity: 0.75
+	.school-state
+		font-size: 12px
+		display: inline-block
+		text-transform: uppercase
+		margin-bottom: 16px
+		border-bottom: 1px solid $red-color
+	.school-name
+		font-family: "Playfair Display", serif
+		font-style: italic
+		font-weight: bold
+		font-size: 40px
+		text-transform: none !important
+		@media (max-width: 767.98px)
+			font-size: 25px
+	.school-contacts
+		font-family: "Montserrat", sans-serif
+		font-weight: bolder
+		font-size: 12px
+		text-transform: none
+		letter-spacing: 2px
+		text-transform: uppercase
+	.social-links
+		a 
+			transition: $transition
+			&:hover
+				opacity: 0.8
+		.border-bottom 
+			border-bottom: 4px solid #0d182d !important
+
+.members
+	.card
+		border: 0
+		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5)
+		position: relative
+		z-index: 2
+		.card-header
+			background-color: #0c2143 !important
+			border: 0
+			border-radius: 0
+			.btn-member
+				font-family: "Playfair Display", serif 
+				font-weight: bold 
+				color: $white-color
+				font-style: italic
+				font-size: 50px
+				&.collapsed
+					.fa-solid
+						transition: $transition
+						transform: rotate(0deg)
+				.fa-solid
+					transform: rotate(180deg)
+					transition: $transition
+			.btn 
+				&:focus
+					box-shadow: 0 0 0 0.2rem transparent
+
+.member-card
+	padding: 40px 0px
+	border-bottom: 2px solid #0b162c
+	text-decoration: none !important
+	transition: $transition
+	background: $white-color
+	@media (max-width: 767.98px)
+		padding: 16px 0
+	&:hover
+		transform: scale(1.1)
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, .7)
+		border-bottom: 0
+		cursor: pointer
+		padding: 40px 70px
+		margin: 0 -70px
+	.member-contacts
+		font-weight: bolder
+		font-size: 30px
+		text-transform: uppercase
+		@media (max-width: 767.98px)
+			font-size: 18px
+
+.bs 
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, .5)
+	position: relative
+	z-index: 15
+
+.sign-form
+	display: flex
+	flex-direction: column
+	position: relative
+	z-index: 1
+	transition: $transition
+	overflow: hidden !important
+	&.active
+		transform: translateX(-100%)
+	.sign-up
+		font-family: "Playfair Display SC", serif 
+		font-weight: bold 
+		font-size: 60px
+		letter-spacing: 2px
+		text-transform: uppercase
+		line-height: 1.2
+		cursor: pointer
+		transition: $transition
+		@media (max-width: 767.98px)
+			font-size: 35px
+		&:hover
+			color: $red-color
+		&:before 
+			content: ""
+			width: 55%
+			background: #0b162c
+			position: absolute
+			top: -27%
+			bottom: -35%
+			left: -60%
+			transform: skewX(-25deg)
+		&:after 
+			content: ""
+			width: 5%
+			background: $red-color
+			position: absolute
+			top: -27%
+			bottom: -35%
+			left: -7%
+			transform: skewX(-25deg)
+
+.sign-submit
+	background-color: #0e172d
+	position: absolute
+	bottom: calc(-81% - 6px)
+	height: 31%
+	width: auto
+	transition: $transition
+	transform: translateX(100%)
+	overflow: hidden !important
+	z-index: 1
+	@media (max-width: 767.98px)
+		bottom: calc(-66% - 6px)
+		height: 18%
+	@media (min-width: 768px)
+		width: 100%
+	&.active
+		transform: translateX(0%)
+	.get 
+		color: $white-color
+		letter-spacing: 2px
+		font-weight: bold
+		font-family: "Montserrat", sans-serif
+		font-size: 10px
+	.form-control
+		background: transparent
+		border: 3px solid $white-color
+		border-top: 0
+		border-left: 0
+		border-right: 0
+		border-radius: 0
+		font-size: 18px
+		color: $white-color
+		&:focus 
+			box-shadow: 0 0 0 0.2rem transparent
+	.btn-submit
+		width: 90%
+		background: $white-color
+		color: $black-color
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 5px
+		border-radius: 0
+		font-weight: bolder
+		font-size: 25px
+		padding: 10px 0
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5)
+		transition: $transition
+		&:hover
+			background: $red-color
+			color: $white-color
+		@media (max-width: 767.98px)
+			font-size: 10px
