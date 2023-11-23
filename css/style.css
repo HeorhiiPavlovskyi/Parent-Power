@@ -517,6 +517,13 @@ footer {
       background: transparent;
       transition: 0.3s;
       margin-right: 5px; }
+      @media (max-width: 450px) {
+        .search-filter .dropdown .dropdown-menu .dropdown-item span {
+          width: 8px;
+          height: 8px; } }
+    @media (max-width: 450px) {
+      .search-filter .dropdown .dropdown-menu .dropdown-item {
+        font-size: 10px; } }
 
 .search-district-input {
   opacity: 0;
@@ -552,7 +559,7 @@ footer {
   text-decoration: none;
   color: #0b162c; }
 .card-block .school-card {
-  padding: 40px 70px;
+  padding: 20px 20px;
   border-bottom: 2px solid #0b162c;
   text-decoration: none !important;
   transition: 0.3s;
@@ -562,6 +569,9 @@ footer {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
     border-bottom: 0;
     cursor: pointer; }
+  @media (min-width: 767.98px) {
+    .card-block .school-card {
+      padding: 40px 70px; } }
   .card-block .school-card .school-state {
     font-size: 12px;
     display: inline-block;

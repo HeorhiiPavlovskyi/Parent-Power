@@ -33,7 +33,7 @@ $('#state-btn').on('click', function() {
   $(".search-district-input").addClass('show');
   });
 
-$('#search-address').on('click', function() {
+$('#search-address, .search-img').on('click', function() {
   $('.search-address, .search-img').addClass('active');
   });
 
